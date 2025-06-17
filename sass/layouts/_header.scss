@@ -118,13 +118,15 @@
         @include flex-row;
         gap: 1.3rem;
         align-items: center;
+        // It occupies the remaining space
     }
-
+    
     &__item{
 
     }
-
+    
     &__add-item{
+        flex: 1;
         font-size: 1.6rem;
         color: $color-white;
         background-color: $color-black;
