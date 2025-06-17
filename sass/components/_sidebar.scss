@@ -1,0 +1,108 @@
+.sidebar{
+    // width: 15%;
+    padding: 0 5rem 0 0;
+    // height: 92vh;
+    margin-top: 4rem;
+    background-color: $color-primary;
+
+    // @include response(desktop){
+    //     padding: 0 3rem 0 0;
+    // }
+
+    // @include response(tab-land){
+    //     padding: 0 2rem 0 0;
+    // }
+    @include response(tab-port){
+        padding: 0 3rem 0 0;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    @include response(phone){
+        padding: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    &__items{
+        @include flex-col;
+        gap: 2rem;
+        list-style: none;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        @include response(desktop){
+            gap: 1.5rem;
+        }
+
+        @include response(tab-land){
+            gap: 1rem;
+        }
+
+        @include response(tab-port){
+            @include flex-row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        @include response(phone){
+            @include flex-row;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 1rem;
+            gap: 1rem;
+            margin-bottom: 0;
+            height: 100%;
+        }
+    }
+
+    &__item-icon{
+        height: 3rem;
+        width: 3rem;
+        padding: 1.4rem;
+        color: $color-grey;
+
+        @include response(desktop){
+            height: 2.7rem;
+            width: 2.7rem;
+            padding: 1rem;
+        }
+
+        @include response(tab-land){
+            height: 2.2rem;
+            width: 2.2rem;
+            padding: 1rem;
+        }
+
+        @include response(tab-port){
+            height: 2.7rem;
+            width: 2.7rem;
+            padding: 1rem;
+        }
+        @include response(phone){
+            height: 2.2rem;
+            width: 2.2rem;
+            padding: .8rem;
+        }
+    }
+
+    &__home{
+        border-radius: 50%;
+        background-color: black;
+        color: $color-white;
+        padding: 1.4rem;
+
+        @include response(desktop){
+            padding: 1.1rem;
+        }
+
+        @include response(tab-land){
+            padding: .8rem;
+        }
+
+        @include response(tab-port){
+            height: 2.7rem;
+            width: 2.7rem;
+            padding: 1rem;
+        }
+    }
+}

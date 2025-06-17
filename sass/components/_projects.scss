@@ -1,0 +1,70 @@
+.projects{
+    padding: 4rem 6rem;
+    @include response(desktop){
+        padding: 3rem 4rem;
+    }
+
+    @include response(tab-land){
+        padding: 3rem 2.5rem;
+    }
+
+    @include response(phone){
+        height: 60rem;
+    }
+
+    &__header{
+        @include response(tab-land){
+            padding: 3rem 4rem
+        }
+        // border-bottom: 1px solid $color-grey-light-1;
+    }
+
+    &__heading{
+        @include flex-row;
+        justify-content: space-between;
+        line-height: .8;
+        & h3{
+            @include response(phone){
+                font-size: 2.4rem !important;
+            }
+        }
+    }
+
+    &__progress-bar{
+        @include flex-row;
+        justify-content: space-between;
+        margin: 3rem 0;
+
+        & p{
+            color: $color-grey;
+            // margin-top: rem;
+            font-size: 1.4rem;
+            line-height: .8;
+        }
+
+
+        &-left{
+            @include flex-row;
+            gap: 2rem;
+        }
+        &-right{
+            @include flex-row;
+            gap: 2rem;
+
+            @include response(phone){
+                @include flex-col;
+                gap: 1rem;
+            }
+        }
+        &-icon{
+            color: $color-black;
+            height: 3rem;
+            width: 3rem;
+
+            @include response(phone){
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+}

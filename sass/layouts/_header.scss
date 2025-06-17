@@ -1,0 +1,187 @@
+.header{
+    @include flex-row;
+    // border: 2px solid $color-black;
+    align-items: center;
+    gap: 3rem;
+    // padding: 1.5rem 0;
+    margin: 1.5rem 0;
+    height: 7.5vh;
+    justify-content: space-between;
+
+    @include response(desktop){
+        margin: 1rem 0;
+    }
+    @include response(tab-land){
+        margin: 1rem 0;
+    }
+    @include response(tab-port){
+        margin: 1.5rem 0;
+    }
+    @include response(phone){
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    &__left{
+        @include flex-row;
+        gap: 8rem;
+        align-items: center;
+        @include response(tab-port){
+            gap: 4rem;
+        }
+        @include response(phone){
+            gap: 2rem;
+        }
+    }
+
+    &__right{
+        @include flex-row;
+        gap: 2rem;
+        align-items: center;
+        @include response(phone){
+            gap: .3rem;
+        }
+    }
+
+    &__search-icon{
+        width: 3rem;
+        height: 3rem;
+        color: $color-grey;
+        display: none;
+        visibility: hidden;
+
+        @include response(phone){
+            width: 2.5rem;
+            height: 2.5rem;
+            display: block;
+            visibility: visible;
+        }
+    }
+
+    &__navigation-box{
+        width: 4rem;
+        height: 2px;
+        background-color: $color-black;
+        position: relative;
+
+        @include response(phone){
+            width: 3rem;
+            height: 2px;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -1rem;
+            left: .5rem;
+            width: 3rem;
+            height: 2px;
+            background-color: $color-black;
+
+            @include response(phone){
+                top: -.8rem;
+                width: 2rem;
+                height: 2px;
+            }
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 1rem;
+            left: .5rem;
+            width: 3rem;
+            height: 2px;
+            background-color: $color-black;
+
+            @include response(phone){
+                top: .8rem;
+                width: 2rem;
+                height: 2px;
+            }
+        }
+    }
+
+    &__search{
+        font-size: 1.4rem;
+        border-radius: 100px;
+        padding: 1.3rem;
+        border: none;
+        outline-color: $color-primary-dark;
+
+        @include response(phone){
+            display: none;
+        }
+    }
+
+    &__items{
+        list-style: none;
+        @include flex-row;
+        gap: 1.3rem;
+        align-items: center;
+    }
+
+    &__item{
+
+    }
+
+    &__add-item{
+        font-size: 1.6rem;
+        color: $color-white;
+        background-color: $color-black;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 50%;
+        align-items: center;
+        // margin: 1.2rem;
+
+        @include response(phone){
+            padding: .3rem 1.1rem .3rem 1.1rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__noti-item{
+        width: 3rem;
+        height: 3rem;
+        color: $color-grey;
+        position: relative;
+        transition: all .3s;
+
+        &:hover{
+            color: $color-black;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: .6rem;
+            right: .6rem;
+            width: .9rem;
+            height: .9rem;
+            background-color: $color-orange-progress;
+            border-radius: 50%;
+            @include response(phone){
+                top: .4rem;
+                right: .59rem;
+                width: .6rem;
+                height: .6rem;
+            }
+        }
+
+        @include response(phone){
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    &__profile-item{
+        @include flex-row;
+        gap: 1rem;
+        align-items: center;
+        padding-left: 1.5rem;
+        border-left: 2px solid $color-grey-light-1;
+
+        @include response(phone){
+            padding-left: 1.5rem;
+        }
+    }
+}

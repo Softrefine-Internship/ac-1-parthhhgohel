@@ -1,0 +1,147 @@
+.messages{
+    padding: 4rem 0;
+    width: 100%;
+    @include response(tab-land){
+        font-size: 53%;
+    }
+
+    @include response(desktop){
+        padding: 2rem 0;
+    }
+
+    @include response(phone){
+        margin-top: 3rem;
+    }
+
+    &__header{
+        padding-bottom: 3rem;
+        @include response(desktop){
+            padding-bottom: 1.5rem;
+        }
+        // border-bottom: 1px solid $color-grey-light-1;
+    }
+    &__heading{
+        @include flex-row;
+        justify-content: space-between;
+        line-height: .8;
+        padding: 0 6rem;
+
+        @include response(desktop){
+            padding: 0 2rem;
+        }
+
+        padding-right: 0;
+        & h3{
+            font-size: 2.6rem;
+        }
+        &-right{
+            @include flex-row;
+            gap: 2rem;
+            align-items: center;
+
+            &-icon{
+                height: 2.5rem;
+                width: 2.5rem;
+                // padding: 1.4rem;
+                color: $color-grey;
+            }
+        }
+    }
+
+    &__cards {
+        padding: 0 3rem;
+
+        @include response(desktop){
+            padding: 0 2rem;
+        }
+
+        padding-right: 0;
+        height: 80rem; // or any value based on layout
+        overflow-y: auto;
+        z-index: 999;
+        scrollbar-width: none;  // Firefox
+        overflow-x: visible;
+        
+        &::-webkit-scrollbar {
+            display: none; 
+            visibility: hidden;       // Chrome/Safari
+        }
+
+        @include response(phone){
+            height: 50rem;
+        }
+    }
+    
+    &__card{
+        @include flex-row;
+        padding: 1.5rem 2.5rem;
+
+        @include response(desktop){
+            padding: 1rem 1.5rem;
+        }
+
+        padding-right: 0;
+        padding-right: 0;
+        border-bottom: 1px solid $color-grey-light-1;
+        gap: 2rem;
+        align-items: center;
+        transition: all .3s;
+        z-index: 999;
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        &-img{
+            align-items: center;
+        }
+
+        &-header{
+            @include flex-row;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: center;
+            &-icon{
+                height: 1.7rem;
+                width: 1.7rem;
+                color: $color-grey;
+            }
+        }
+        &-body{
+            padding-right: 2rem;
+            & h4{
+                font-size: 2rem !important;
+            }
+            & p{
+                line-height: 1.5;
+                color: $color-grey;
+
+                @include response(phone){
+                    line-height: 1.2;
+                }
+            }
+        }
+        &-footer{
+            @include flex-row;
+            justify-content: end;
+            & span{
+                margin-top: -1rem;
+                font-size: 1.5rem;
+                color: $color-grey;
+            }
+        }
+
+        &:hover{
+            background-color: $color-white;
+            cursor: pointer;
+            width: 70rem;
+            box-shadow: 0 1rem 2rem #c5c5c570;
+            border-radius: 2rem;
+            transform: scale(1.05) translateX(1.2rem);
+
+            @include response(phone){
+                width: 40rem;
+            }
+        }
+    }
+}

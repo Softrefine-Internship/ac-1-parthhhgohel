@@ -1,0 +1,52 @@
+.heading-secondary{
+    font-size: 3.8rem;
+    color: $color-black;
+
+    @include response(phone){
+        font-size: 2.6rem;
+    }
+    // display: inline-block;
+}
+
+.heading-tertiary{
+    font-size: 2.4rem;
+    color: $color-grey-dark-1;
+
+    @include response(phone){
+        font-size: 2.1rem;
+    }
+    // display: inline-block;
+}
+
+.heading-quaternary{
+    font-size: 1.8rem;
+    color: $color-grey-dark-1;
+
+    @include response(phone){
+        font-size: 1.6rem;
+    }
+    // display: inline-block;
+}
+.heading-quinary{
+    font-size: 1.8rem;
+    color: $color-grey-dark-1;
+    // display: inline-block;
+}
+
+.profile-pic-small{
+    height: 2.5rem;
+    border-radius: 50%;
+    display: inline;
+}
+.profile-pic-medium{
+    height: 4.5rem;
+    border-radius: 50%;
+
+    @include response(phone){
+        height: 3.5rem;
+    }
+}
+.profile-pic-big{
+    height: 7rem;
+    border-radius: 50%;
+}

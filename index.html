@@ -3,7 +3,387 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>dashboard - test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <a href="#" class="header__navigation-box">
+            
+        </a>
+        <h2 class="heading-secondary">Portfolio</h2>
+        <!-- ICON SEARCH -->
+        <ion-icon name="search-outline" class="header__search-icon"></ion-icon>
+        <input type="header__search" class="header__search" placeholder="Search">
+      </div>
+      <div class="header__right">
+        <ul class="header__items">
+          <li class="header__item header__add-item">+</li>
+          <li class="header__item header__noti-item"><ion-icon name="notifications-outline" class="header__noti-item"></ion-icon></li>
+          <li class="header__item header__profile-item"><img src="img/client-1.jpg" alt="person 1" class="profile-pic-medium"><h3 class="heading-tertiary">Hira R</h3></li>
+        </ul>
+      </div>
+    </header>
+    <main class="section-main">
+    
+      <section class="section-sidebar">
+        <div class="sidebar">
+          <ul class="sidebar__items">
+            <li class="sidebar__item"><ion-icon name="home-outline" class="sidebar__item-icon sidebar__home"></ion-icon></li>
+            <li class="sidebar__item"><ion-icon name="person-outline" class="sidebar__item-icon"></ion-icon></li>
+            <li class="sidebar__item"><ion-icon name="chatbox-outline" class="sidebar__item-icon"></ion-icon></li>
+            <li class="sidebar__item"><ion-icon name="calendar-outline" class="sidebar__item-icon"></ion-icon></li>
+            <li class="sidebar__item"><ion-icon name="Settings-outline" class="sidebar__item-icon"></ion-icon></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-projects">
+        <div class="projects">
+          <div class="projects_header">
+            <div class="projects__heading">
+              <h3 class="heading-tertiary">Projects</h3>
+              <p class="heading-quaternary">July, 2020</p>
+            </div>
+            <div class="projects__progress-bar">
+                <!-- LEFT -->
+              <div class="projects__progress-bar-left">
+                <div class="projects__progress">
+                  <h3 class="heading-tertiary">45</h3>
+                  <p class="heading-quinary">In progress</p>
+                </div>
+                <div class="projects__progress">
+                  <h3 class="heading-tertiary">12</h3>
+                  <p class="heading-quinary">In progress</p>
+                </div>
+                <div class="projects__progress">
+                  <h3 class="heading-tertiary">10</h3>
+                  <p class="heading-quinary">Upcoming</p>
+                </div>
+                <div class="projects__progress">
+                  <h3 class="heading-tertiary">67</h3>
+                  <p class="heading-quinary">Total project</p>
+                </div>
+              </div>
+              <!-- RIGHT -->
+              <div class="projects__progress-bar-right">
+                <ion-icon name="menu-outline" class="projects__progress-bar-icon"></ion-icon>
+                <ion-icon name="grid-outline" class="projects__progress-bar-icon"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__cards">
+            <div class="cards">
+              <div class="cards__card cards__card--1">
+                <div class="cards__header">
+                  <p class="heading-quinary">July 2, 2020</p>
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+                </div>
+                <div class="cards__body">
+                  <h3 class="heading-quaternary">Web Design</h3>
+                  <p class="heading-quinary">Prototype</p>
+
+                  <div class="cards__progress-bar progress-bar--1">
+                    <p class="heading-quinary">Progress</p>
+                    <progress value="90" max="100"></progress>
+                    <p class="heading-quinary">90%</p>
+                  </div>
+                </div>
+
+                <div class="cards__footer">
+                  <div class="cards__img-box">
+                    <img src="img/client-6.jpg" alt="person 1" class="cards__img profile-pic-small">
+                    <img src="img/client-2.jpg" alt="person 2" class="cards__img profile-pic-small">
+                    <img src="img/client-8.jpg" alt="person 2" class="cards__img profile-pic-small">
+                  </div>
+
+                  <div class="cards__time-left cards__time-left--1">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+              <div class="cards__card cards__card--2">
+                <div class="cards__header">
+                  <p class="heading-quinary">July 2, 2020</p>
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+                </div>
+                <div class="cards__body">
+                  <h3 class="heading-quaternary">Web Design</h3>
+                  <p class="heading-quinary">Prototype</p>
+
+                  <div class="cards__progress-bar progress-bar--2">
+                    <p class="heading-quinary">Progress</p>
+                    <progress value="40" max="100"></progress>
+                    <p class="heading-quinary">40%</p>
+                  </div>
+                </div>
+
+                <div class="cards__footer">
+                  <div class="cards__img-box">
+                    <img src="img/client-6.jpg" alt="person 1" class="cards__img profile-pic-small">
+                    <img src="img/client-2.jpg" alt="person 2" class="cards__img profile-pic-small">
+                    <img src="img/client-8.jpg" alt="person 2" class="cards__img profile-pic-small">
+                  </div>
+
+                  <div class="cards__time-left cards__time-left--2">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="cards__card cards__card--3">
+                <div class="cards__header">
+                  <p class="heading-quinary">July 2, 2020</p>
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+                </div>
+                <div class="cards__body">
+                  <h3 class="heading-quaternary">Web Design</h3>
+                  <p class="heading-quinary">Prototype</p>
+
+                  <div class="cards__progress-bar progress-bar--3">
+                    <p class="heading-quinary">Progress</p>
+                    <progress value="66" max="100"></progress>
+                    <p class="heading-quinary">66%</p>
+                  </div>
+                </div>
+
+                <div class="cards__footer">
+                  <div class="cards__img-box">
+                    <img src="img/client-6.jpg" alt="person 1" class="cards__img profile-pic-small">
+                    <img src="img/client-2.jpg" alt="person 2" class="cards__img profile-pic-small">
+                    <img src="img/client-8.jpg" alt="person 2" class="cards__img profile-pic-small">
+                  </div>
+
+                  <div class="cards__time-left cards__time-left--3">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="cards__card cards__card--4">
+                <div class="cards__header">
+                  <p class="heading-quinary">July 2, 2020</p>
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+                </div>
+                <div class="cards__body">
+                  <h3 class="heading-quaternary">Web Design</h3>
+                  <p class="heading-quinary">Prototype</p>
+
+                  <div class="cards__progress-bar progress-bar--4">
+                    <p class="heading-quinary">Progress</p>
+                    <progress value="90" max="100"></progress>
+                    <p class="heading-quinary">90%</p>
+                  </div>
+                </div>
+
+                <div class="cards__footer">
+                  <div class="cards__img-box">
+                    <img src="img/client-6.jpg" alt="person 1" class="cards__img profile-pic-small">
+                    <img src="img/client-2.jpg" alt="person 2" class="cards__img profile-pic-small">
+                    <img src="img/client-8.jpg" alt="person 2" class="cards__img profile-pic-small">
+                  </div>
+
+                  <div class="cards__time-left cards__time-left--4">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+              <div class="cards__card cards__card--5">
+                <div class="cards__header">
+                  <p class="heading-quinary">July 2, 2020</p>
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+                </div>
+                <div class="cards__body">
+                  <h3 class="heading-quaternary">Web Design</h3>
+                  <p class="heading-quinary">Prototype</p>
+
+                  <div class="cards__progress-bar progress-bar--1">
+                    <p class="heading-quinary">Progress</p>
+                    <progress value="20" max="100"></progress>
+                    <p class="heading-quinary">20%</p>
+                  </div>
+                </div>
+
+                <div class="cards__footer">
+                  <div class="cards__img-box">
+                    <img src="img/client-8.jpg" alt="person 1" class="cards__img profile-pic-small">
+                    <img src="img/client-2.jpg" alt="person 2" class="cards__img profile-pic-small">
+                    <img src="img/client-4.jpg" alt="person 2" class="cards__img profile-pic-small">
+                  </div>
+
+                  <div class="cards__time-left cards__time-left--5">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+              <div class="cards__card cards__card--6">
+                <div class="cards__header">
+                  <p class="heading-quinary">July 2, 2020</p>
+                  <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+                </div>
+                <div class="cards__body">
+                  <h3 class="heading-quaternary">Web Design</h3>
+                  <p class="heading-quinary">Prototype</p>
+
+                  <div class="cards__progress-bar">
+                    <p class="heading-quinary progress-bar--6">Progress</p>
+                    <progress value="75" max="100"></progress>
+                    <p class="heading-quinary">75%</p>
+                  </div>
+                </div>
+
+                <div class="cards__footer">
+                  <div class="cards__img-box">
+                    <img src="img/client-6.jpg" alt="person 1" class="cards__img profile-pic-small">
+                    <img src="img/client-2.jpg" alt="person 2" class="cards__img profile-pic-small">
+                    <img src="img/client-8.jpg" alt="person 2" class="cards__img profile-pic-small">
+                  </div>
+
+                  <div class="cards__time-left cards__time-left--6">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-messages">
+        <div class="messages">
+          <div class="messages__header">
+            <div class="messages__heading">
+              <div class="messages__heading-left">
+                <h3 class="heading-tertiary">Client Messages</h3>
+              </div>
+              <div class="messages__heading-right">
+                <a href="#"><ion-icon name="search-outline" class="messages__heading-right-icon"></ion-icon></a>
+                <a href="#"><img src="img/two-dots.png" alt="two dots" class="cards__header-img"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="messages__body">
+            <div class="messages__cards">
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-1.jpg" alt="person 1" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">John Doe</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis yuo be. Lorem ipsum dolor sit amet.</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-2.jpg" alt="person 2" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">Stephanie</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit 👌. Nobis yuo be. Lorem ipsum dolor sit amet.</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-3.jpg" alt="person 3" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">William</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis yuo be. Lorem ipsum dolor sit amet.</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-4.jpg" alt="person 4" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">Alona</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit 😊. Nobis yuo be. Lorem ipsum dolor sit amet.</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-5.jpg" alt="person 5" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">Hira</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis yuo be. Lorem ipsum dolor sit amet. 😍</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-6.jpg" alt="person 6" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">Ghansham</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis yuo be. Lorem ipsum dolor sit amet.</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+              <div class="messages__card">
+                <div class="messages__card-img">
+                  <img src="img/client-6.jpg" alt="person 7" class="messages__card-img profile-pic-big">
+                </div>
+                <div class="messages__card-body">
+                  <div class="messages__card-header">
+                    <h4 class="heading-quaternary">Smith</h4>
+                    <ion-icon name="star-outline" class="messages__card-header-icon"></ion-icon>
+                  </div>
+                  <p class="heading-quinary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis yuo be. Lorem ipsum dolor sit amet.</p>
+                  <div class="messages__card-footer">
+                    <span>23 July</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

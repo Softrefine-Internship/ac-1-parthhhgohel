@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Cairo', sans-serif;
+
+    // @include response(big-desktop) {
+    //     font-size: 75%; //1rem = 12, 12/16
+    // }
+    
+    @include response(desktop){
+        font-size: 59%;
+    }
+    
+    @include response(tab-land) { // width < 1200?
+        font-size: 54.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include response(tab-port) { // width < 900?
+        font-size: 45%; //1 rem = 8px, 8/16 = 50%
+    }
+
+    @include response(phone) { // width < 600?
+        font-size: 50%; //1 rem = 9px, 9/16 = 50%
+    }
+}
+
+body{
+    background-color: $color-primary;
+    margin: 0 6rem;
+    z-index: 0;
+
+    @include response(big-desktop){
+        // margin: 0 6rem;
+
+    }
+
+    @include response(desktop){
+        margin: 0 3rem;
+    }
+
+    @include response(tab-land){
+        margin: 0 2rem;
+    }
+
+    @include response(tab-port){
+        margin: 0 2.3rem;
+    }
+}
